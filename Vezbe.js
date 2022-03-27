@@ -30,3 +30,56 @@
 //     [5,2,3]//10
 // ]
 // console.log(order(arr));
+
+//1
+
+// const is_array = (arr) => {
+//     return Array.isArray(arr);
+// }
+
+// console.log(is_array(2));
+
+
+//4
+
+// const last = (arr, n) =>{
+//     if(typeof(n) != "number") return arr[arr.length-1];
+//     return arr.slice(-n);
+// }
+
+// console.log(last([2,3,4,5,6]));
+
+
+//5
+
+// let myColor = ["Red", "Green", "White", "Black"];
+
+// myColor = myColor.join("+");
+
+// console.log(myColor);
+
+
+//7
+// let arr = [5,4,2,7,8,-4,-3,-1];
+// arr.sort((a,b) => a-b);
+// arr = arr.join(",")
+// console.log(arr);
+
+
+
+
+//Write a method that clears array from all unnecessary elements, like false, undefined, empty strings, zero, null
+
+// let arr = [false,,5,3,0,"0","",null];
+// let i = 0;
+// while(i<arr.length){
+//     if(typeof(arr[i]) === "undefined" || arr[i] === false || arr[i] === "" || arr[i] == 0 || arr[i] === null){
+//         arr.splice(i,1);
+//         continue;
+//     }
+//     i++;
+// }
+// console.log(arr);
+
+
+
