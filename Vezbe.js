@@ -187,4 +187,83 @@
 // ];
 // console.log(alphabetize(jumbledAlphabetically));
 
+// const findCommonWords = (firstArray, secondArray) => {
+// 	let newArr = [];
+// 	let alreadyAppeared = [];
+// 	for (let i = 0; i < secondArray.length; i++) {
+// 		if (
+// 			firstArray.includes(secondArray[i]) === true &&
+// 			alreadyAppeared.includes(secondArray[i]) !== true
+// 		) {
+// 			let brojac = 0;
+// 			for (let j = 0; j < firstArray.length || j < secondArray.length; j++) {
+// 				if (firstArray[j] === secondArray[i]) brojac++;
+// 				if (secondArray[j] === secondArray[i]) brojac++;
+// 			}
+// 			newArr.push([secondArray[i], brojac]);
+// 			alreadyAppeared.push(secondArray[i]);
+// 		}
+// 	}
+// 	newArr.sort((a, b) => b[1] - a[1]);
+// 	for (let i = 0; i < newArr.length; i++) {
+// 		newArr[i] = newArr[i][0];
+// 	}
+// 	return newArr;
+// };
+
+// const firstArray = ['dog', 'cat', 'parrot', 'dog'];
+// const secondArray = ['lizard', 'rat', 'cat', 'dog', 'dog'];
+// console.log(findCommonWords(firstArray, secondArray)); // ["cat"]
+
+// const containsAllElements = (firstArray, secondArray) => {
+// 	for (let i = 0; i < secondArray.length; i++) {
+// 		if (firstArray.includes(secondArray[i]) === false) return false;
+// 	}
+// 	return true;
+// };
+
+// console.log(containsAllElements(['monday', 'tuesday'], ['tuesday'])); // true
+
+// const sortTheArray = (arr) => {
+// 	let orderedNum = [];
+// 	let orderedLetters = [];
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (typeof arr[i] === 'string') orderedLetters.push(arr[i]);
+// 		if (typeof arr[i] === 'number') orderedNum.push(arr[i]);
+// 	}
+// 	orderedLetters.sort((a, b) => a.localeCompare(b));
+// 	orderedNum.sort((a, b) => a - b);
+// 	let newArr = [];
+// 	for (let i = 0; i < orderedNum.length; i++) {
+// 		newArr.push(orderedNum[i]);
+// 	}
+// 	for (let i = 0; i < orderedLetters.length; i++) {
+// 		newArr.push(orderedLetters[i]);
+// 	}
+// 	return newArr;
+// };
+
+// console.log(sortTheArray(['b', 6, 'a', 'q', 7, 2]));
+// [2, 6, 7, "a", "b", "q"]
+
+// const move = (arr, firstIndex, secondIndex) => {
+// 	let pom = arr[secondIndex];
+// 	arr[secondIndex] = arr[firstIndex];
+// 	arr[firstIndex] = pom;
+// 	return arr;
+// };
+
+// console.log(move([4, 5, 7], 2, 1)); // [4, 7, 5]
+
+// const buildArray = (arr, indexes) => {
+// 	let newArr = [];
+// 	for (let i = 0; i < indexes.length; i++) {
+// 		newArr.push(arr[indexes[i]]);
+// 	}
+// 	return newArr;
+// };
+
+// console.log(buildArray(['mon', 'tue', 'wed', 'thur', 'fri'], [1, 3, 4]));
+// ["tue", "thur", "fri"]
+
 
