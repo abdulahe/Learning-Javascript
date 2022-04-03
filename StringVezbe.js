@@ -206,9 +206,14 @@
 // console.log(extractQuote(quote));
 // ["The unexamined life is not worth living.", "Socrates"]
 
-const verifyEmail = (email) => {
-	email = email.split('@');
-};
+// const verifyEmail = (email) => {
+// 	email = email.split('@');
+// 	if (email.length > 2 || email.length < 2) return false;
+// 	email[1] = email[1].split('.'); //i will only consider ".com" a valid domain name
+// 	if (email[1].length > 2 || email[1].length < 2) return false;
+// 	if (email[1][1] === 'com' && email[1][0].length > 0) return true;
+// 	else return false;
+// };
 
-console.log(verifyEmail('somebody@somewhere')); // false
-console.log(verifyEmail('person@company.com')); // true
+// console.log(verifyEmail('somebody@somewhere')); // false
+// console.log(verifyEmail('person@company.com')); // true
