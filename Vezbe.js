@@ -265,3 +265,38 @@
 
 // console.log(buildArray(['mon', 'tue', 'wed', 'thur', 'fri'], [1, 3, 4]));
 // ["tue", "thur", "fri"]
+
+// const orderAlphabetically = (str) => {
+// 	str = str.split('');
+// 	str.sort();
+// 	str = str.join('');
+// 	return str;
+// };
+
+// console.log(orderAlphabetically('webmaster'));
+
+// const makeCapital = (str) => {
+// 	str = str.split(' ');
+// 	for (let i = 0; i < str.length; i++) {
+// 		str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+// 	}
+// 	str = str.join(' ');
+// 	return str;
+// };
+
+// console.log(makeCapital('the quick brown fox'));
+
+// const najduzaRec = (str) => {
+// 	str = str.split(' ');
+// 	let duzinaNajduze = 0;
+// 	let najduzaIndex = 0;
+// 	for (let i = 0; i < str.length; i++) {
+// 		if (str[i].length > duzinaNajduze) {
+// 			duzinaNajduze = str[i].length;
+// 			najduzaIndex = i;
+// 		}
+// 	}
+// 	return str[najduzaIndex];
+// };
+
+// console.log(najduzaRec('Web Development Tutorial'));
