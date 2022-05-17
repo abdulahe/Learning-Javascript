@@ -13,32 +13,44 @@ const displayValue = (value) => {
 // 	displayValue('timeout');
 // }, 2000);
 
-// let h = 0,
-// 	m = 0,
-// 	s = 0;
+//clock
 
-// displayHour = () => {
+// let h = '0' + 0,
+// 	m = '0' + 0,
+// 	s = '0' + 0;
+
+// increaseHour = () => {
 // 	h++;
 // 	if (h == 24) h = 0;
+// 	if (h < 10) {
+// 		h = '0' + h;
+// 	}
 // };
-// displayMin = () => {
+
+// increaseMin = () => {
 // 	m++;
 // 	if (m == 60) m = 0;
+// 	if (m < 10) {
+// 		m = '0' + m;
+// 	}
 // };
 
-// displaySec = () => {
+// increaseSec = () => {
 // 	s++;
 // 	if (s == 60) s = 0;
+// 	if (s < 10) {
+// 		s = '0' + s;
+// 	}
 // };
 
 // setInterval(() => {
-// 	displaySec();
+// 	increaseSec();
 // }, 1000);
 // setInterval(() => {
-// 	displayMin();
+// 	increaseMin();
 // }, 60000);
 // setInterval(() => {
-// 	displayHour();
+// 	increaseHour();
 // }, 1440000);
 
 // setInterval(() => {
