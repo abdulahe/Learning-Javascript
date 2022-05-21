@@ -62,3 +62,25 @@ const displayValue = (value) => {
 // let arr2 = arr.map((a) => a.charAt(0).toUpperCase() + a.slice(1).toLowerCase());
 
 // console.log(arr2);
+
+// let niz = [1, 2, 3, 4];
+// let initialValue = 0;
+// let total = niz.reduce(
+// 	(previousValue, currentValue) => previousValue + currentValue,
+// 	initialValue
+// );
+// console.log(total);
+
+// let total = [{ x: 1 }, { x: 2 }, { x: 3 }].reduce(
+// 	(previousValue, currentValue) => previousValue + currentValue.x,
+// 	0
+// );
+// console.log(total);
+
+let flattened = [
+	[0, 1],
+	[2, 3],
+	[4, 5],
+].reduce((previousValue, currentValue) => previousValue.concat(currentValue));
+
+console.log(flattened);
