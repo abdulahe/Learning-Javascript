@@ -77,10 +77,111 @@ const displayValue = (value) => {
 // );
 // console.log(total);
 
-let flattened = [
-	[0, 1],
-	[2, 3],
-	[4, 5],
-].reduce((previousValue, currentValue) => previousValue.concat(currentValue));
+// let flattened = [
+// 	[0, 1],
+// 	[2, 3],
+// 	[4, 5],
+// ].reduce((previousValue, currentValue) => previousValue.concat(currentValue));
 
-console.log(flattened);
+// console.log(flattened);
+
+// const names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice'];
+// let repetition = {};
+
+// for (let i = 0; i < names.length; i++) {
+// 	if (!repetition.hasOwnProperty(names[i])) {
+// 		repetition[names[i]] = 1;
+// 	} else {
+// 		repetition[names[i]]++;
+// 	}
+// }
+
+// console.log(repetition);
+
+// const friends = [
+// 	{
+// 		name: 'name1',
+// 		books: ['Book1', 'Book2'],
+// 		age: 1,
+// 	},
+// 	{
+// 		name: 'name2',
+// 		books: ['Book3', 'Book4'],
+// 		age: 2,
+// 	},
+// 	{
+// 		name: 'name3',
+// 		books: ['Book5', 'Book6'],
+// 		age: 3,
+// 	},
+// ];
+
+// let initialValue = ['Alphabet'];
+
+// let booknames = friends.reduce(
+// 	(previousValue, currentValue) =>
+// 		// previousValue.concat(currentValue.books),
+// 		[...previousValue, ...currentValue.books],
+// 	initialValue
+// );
+
+// console.log(booknames);
+
+// const obj = {
+// 	name: 'Abdulah',
+// 	age: 19,
+// };
+// // let {age : agee} = obj;
+// let { age } = obj;
+// console.log(age);
+
+// const myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd'];
+
+// let myNewArray = myArray.reduce((previousValue, currentValue) => {
+// 	if (!previousValue.includes(currentValue)) {
+// 		return previousValue.concat(currentValue);
+// 	}
+// 	return previousValue;
+// }, []);
+
+// console.log(myNewArray);
+
+// let filtered = [12, 5, 8, 13, 44].filter((br) => br >= 10);
+// console.log(filtered);
+
+// const isPrime = (br) => {
+// 	for (let i = 2; i < br; i++) {
+// 		if (br % i == 0) return 0;
+// 	}
+// 	if (br > 0) return 1;
+// };
+
+// const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+// let newArr = array.filter((br) => {
+// 	if (isPrime(br)) return br;
+// });
+
+// console.log(newArr);
+
+// const array = [5, 12, 8, 130, 40];
+
+// let br = array.find((br) => br > 10);
+// console.log(br);
+
+// const isPrime = (br) => {
+// 	for (let i = 2; i < br; i++) {
+// 		if (br % i == 0) return false;
+// 	}
+// 	if (br > 0) return true;
+// };
+
+// let brojevi = [4, 5, 67, 8, 2];
+
+// console.log(brojevi.find((br) => isPrime(br)));
+
+// .every da lai svaki ispunjava uslov
+// .even da li bar jedan ispunjava uslov
+
+// let brojevi = [23, 23, 45, 22, 11];
+// console.log(brojevi.every((br) => br >= 10 && br < 100));
