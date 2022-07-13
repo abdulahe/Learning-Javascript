@@ -1,6 +1,6 @@
-const displayValue = (value) => {
-	console.log(value);
-};
+// const displayValue = (value) => {
+// 	console.log(value);
+// };
 
 // const calculator = (a, b, func) => {
 // 	value = a + b;
@@ -185,3 +185,7 @@ const displayValue = (value) => {
 
 // let brojevi = [23, 23, 45, 22, 11];
 // console.log(brojevi.every((br) => br >= 10 && br < 100));
+
+setTimeout(()=>{
+	console.log(5);
+},2000);
